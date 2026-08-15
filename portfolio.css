@@ -592,10 +592,24 @@ a.touch-value:hover{ color: #2f5dff; }
   background-color: #1a3fcc;
   transform: translateY(-2px);
 }
+@media (max-width: 768px) {
+  .container, section, .touch-grid, .sidebar {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box;
+  }
 
-@media (max-width: 700px){
-  .touch-grid{
-    grid-template-columns: 1fr;
+  .touch-form input, 
+  .touch-form textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  footer, .bottom-bar {
+    width: 100% !important;
+    box-sizing: border-box;
   }
 }
 
